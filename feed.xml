@@ -1,133 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title>Moje správy</title>
-<description>SME + Denník N + Aktuality</description>
-<link>https://github.com/</link>
+<title>Filtrované správy</title>
+<description>Len relevantné správy (AI, politika, ekonomika)</description>
+<link>https://github.com</link>
 
     <item>
-        <title>Vražda Róberta Remiáša, od ktorej ubehlo 30 rokov, nie je premlčaná</title>
-        <link>https://www.aktuality.sk/clanok/S7WO4Br/vrazda-roberta-remiasa-od-ktorej-ubehlo-30-rokov-nie-je-premlcana/</link>
+        <title>[Aktuality] Rozhodnuté: Európsky parlament žiada zmrazenie miliárd pre Slovensko</title>
+        <link>https://www.aktuality.sk/clanok/r129hLD/europsky-parlament-ziada-zmrazenie-eurofondov-pre-slovensko-freundov-navrh-uspesne-presiel/</link>
+        <description>&lt;img src=&quot;https://img.aktuality.sk/foto/europoslanec-daniel-freund/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/i-3ktkpTURBXy80ZjkwM2EwYjlhMGQ2NjM3M2NjYTEwZTA4ZWZlMDE0NS5qcGeSlQMAJc0EsM0Co5UCzQfQAMLD?st=szJlAbuU1YcjdiUJlNY1yTMF-lOU1eVgTH4mZLsqyDg&amp;amp;ts=1777413600&amp;amp;e=0&quot; /&gt;
+                                                &lt;br /&gt;
+                                                    Bruselskí poslanci žiadajú zmrazenie európskych peňazí pre vládu Roberta Fica. Tvrdia, že kroky kabinetu ohrozujú právny štát aj finančné záujmy Únie.</description>
     </item>
     
     <item>
-        <title>Slafkovského útok bol zbraňou, teraz je problémom. Dilemu trénera približuje metafora s lekármi</title>
-        <link>https://dennikn.sk/5304064/slafkovskeho-utok-bol-zbranou-teraz-je-problemom-dilemu-trenera-priblizuje-metafora-s-lekarmi/</link>
+        <title>[DennikN] Slovensko môže prísť o fondy ako Maďarsko. Europoslanci varovali Fica, aby nešiel Orbánovou cestou</title>
+        <link>https://dennikn.sk/5304470/slovensko-moze-prist-o-fondy-ako-madarsko-europoslanci-varovali-fica-aby-nesiel-orbanovou-cestou/</link>
+        <description>&lt;img src=&quot;https://img.projektn.sk/wp-static/2025/12/MixCollage-18-Dec-2025-11-57-AM-1893.jpg?w=450&amp;amp;h=300&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;q=85&quot; /&gt;&lt;br /&gt;Európsky parlament vyzval Komisiu, aby spustila mechanizmus podmienenosti. Na jeho konci môže byť zmrazenie európskych fondov.</description>
     </item>
     
     <item>
-        <title>Zažite vlastný príbeh Mamma Mia! Tento grécky ostrov má 60 pláží a na jar tu budete takmer sami</title>
-        <link>https://www.aktuality.sk/clanok/SRALtI6/zazite-vlastny-pribeh-mamma-mia-tento-grecky-ostrov-ma-60-plazi-a-na-jar-tu-budete-takmer-sami/</link>
+        <title>[DennikN] Dobrá správa v boji s otepľovaním a nepríjemné zistenie, ako málo nám záleží na deťoch</title>
+        <link>https://e.dennikn.sk/5302884/dobra-sprava-v-boji-s-oteplovanim-a-neprijemne-zistenie-ako-malo-nam-zalezi-na-detoch/</link>
+        <description>&lt;img src=&quot;https://img.projektn.sk/wp-static/2024/11/APTOPIXSpainFloods845139.jpg?w=450&amp;amp;h=300&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;q=85&quot; /&gt;&lt;br /&gt;Zelený newsfilter komentuje správy o&amp;#160;ochrane planéty, životnom prostredí a&amp;#160;počasí. Čo teraz robiť s&amp;#160;klímou: lekcia od muža, ktorý varoval svet. El Niño sa vyvinie zrejme už v&amp;#160;období mesiacov máj až júl. Minulý rok sa prvýkrát za zhruba 100 rokov vyrobilo viac elektriny z&amp;#160;obnoviteľných zdrojov ako z&amp;#160;uhlia, pri ktorom vzniká najviac emisií skleníkových plynov zo všetkých fosílnych [&amp;#8230;]</description>
     </item>
     
     <item>
-        <title>Juhokórejský súd sprísnil trest pre exprezidenta Jun Sok-jola za marenie spravodlivosti</title>
-        <link>https://www.aktuality.sk/clanok/M4mW02L/juhokorejsky-sud-sprisnil-trest-pre-exprezidenta-jun-sok-jola-za-marenie-spravodlivosti/</link>
+        <title>[DennikN] Graf dňa: Ľudia bohatnú, optimizmus na finančných trhoch prevládol nad slabou ekonomikou</title>
+        <link>https://e.dennikn.sk/5304299/graf-dna-ludia-bohatnu-optimizmus-na-financnych-trhoch-prevladol-nad-slabou-ekonomikou/</link>
+        <description>&lt;img src=&quot;https://img.projektn.sk/wp-static/2026/04/Copy-of-bohatstvo-2x-e1777450007493.png?w=450&amp;amp;h=300&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;q=85&quot; /&gt;&lt;br /&gt;Finančný majetok obyvateľov Slovenska vlani narástol. Hlavným dôvodom bol priaznivý vývoj na finančných trhoch. Minulý rok rástli mzdy na Slovensku pomaly, a&amp;#160;keďže sa zároveň zvyšovali dane, obyvatelia znížili svoju spotrebu aj úspory. Napriek tomu boli na konci roka ľudia bohatší než kedykoľvek predtým. Finančný majetok Slovákov vlani stúpol o&amp;#160;vyše 8 percent a&amp;#160;dosiahol 124 miliárd eur, [&amp;#8230;]</description>
     </item>
     
     <item>
-        <title>Richard Sulík definitívne opúšťa SaS. Strana sa vraj posunula k progresívcom</title>
-        <link>https://www.aktuality.sk/clanok/62fSq5x/richard-sulik-definitivne-opusta-sas-strana-sa-vraj-posunula-k-progresivcom/</link>
+        <title>[Aktuality] Akcia Timer: Finančná správa zlikvidovala tajnú fabriku na cigarety, vo väzbe skončilo 20 ľudí</title>
+        <link>https://www.aktuality.sk/clanok/tYwXs30/akcia-timer-financna-sprava-zlikvidovala-tajnu-fabriku-na-cigarety-vo-vazbe-skoncilo-20-ludi/</link>
+        <description>&lt;img src=&quot;https://img.aktuality.sk/foto/finan-n-spr-va-odhalila-neleg-lnu-v-rob-u-cigariet-na-li-11-2-tony-tabaku/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/VwlktkpTURBXy9lM2Q1MDJhMGE0M2E5ZjU3NWExZTRiNzRmZTYzNTExYS5qcGeSlQMAbM0FZs0DCZUCzQfQAMLD?st=jVWI5RPiYmPkWXrVFwR2-EmervJGlNi2prt3cjSBuoU&amp;amp;ts=1777413600&amp;amp;e=0&quot; /&gt;
+                                                &lt;br /&gt;
+                                                    Štátu vznikla škoda presahujúca dva milióny eur, pričom vyšetrovatelia na mieste zaistili aj rušičky signálu či fotopasce.</description>
     </item>
     
     <item>
-        <title>Vo veku 82 rokov zomrel bývalý poslanec Ján Kerekréti</title>
+        <title>[Aktuality] Vo veku 82 rokov zomrel bývalý poslanec Ján Kerekréti</title>
         <link>https://www.aktuality.sk/clanok/2E89Xhh/vo-veku-82-rokov-zomrel-byvaly-poslanec-jan-kerekreti/</link>
-    </item>
-    
-    <item>
-        <title>Prieskum o volebnej reforme: dve tretiny populácie chcú menej strán, so zrušením voľby poštou súhlasí 40 percent opýtaných</title>
-        <link>https://dennikn.sk/5182058/prieskum-o-volebnej-reforme-dve-tretiny-populacie-chcu-menej-stran-so-zrusenim-volby-postou-suhlasi-40-percent-opytanych/</link>
-    </item>
-    
-    <item>
-        <title>Definitívna stopka pre SIAF v Košiciach: Letisko nečakane zrušilo súhlas pre bezpečnostné riziká</title>
-        <link>https://www.aktuality.sk/clanok/FRCQstQ/definitivna-stopka-pre-siaf-v-kosiciach-letisko-necakane-zrusilo-suhlas-pre-bezpecnostne-rizika/</link>
-    </item>
-    
-    <item>
-        <title>Verdikt znel, prerušiť tehotenstvo. Rodičia poslali krv do Hongkongu, aby si potvrdili, že ich dcéra nemá Downov syndróm</title>
-        <link>https://www.aktuality.sk/clanok/oskdcAd/ked-intuicia-vyhra-nad-lekarskym-posudkom-tvrdili-ze-miuska-ma-downov-syndrom-v-hongkongu-nam-povedali-ze-to-tak-nie-je/</link>
-    </item>
-    
-    <item>
-        <title>Európska komisia kritizuje spoločnosť Meta: Facebook a Instagram nedostatočne chránia deti pod 13 rokov</title>
-        <link>https://www.aktuality.sk/clanok/cPSsYoP/europska-komisia-kritizuje-spolocnost-meta-facebook-a-instagram-nedostatocne-chrania-deti-pod-13-rokov/</link>
-    </item>
-    
-    <item>
-        <title>Londýn ruským oligarchom ponúkol to, čo iní nemohli. Dnes ich luxusné vily chátrajú (reportáž)</title>
-        <link>https://dennikn.sk/5287144/londyn-ruskym-oligarchom-ponukol-to-co-ini-nemohli-dnes-ich-luxusne-vily-chatraju-reportaz/</link>
-    </item>
-    
-    <item>
-        <title>Foo Fighters si lížu rany a znejú najagresívnejšie za posledné roky</title>
-        <link>https://dennikn.sk/5302239/foo-fighters-si-lizu-rany-a-zneju-najagresivnejsie-za-posledne-roky/</link>
-    </item>
-    
-    <item>
-        <title>Kamery problém s mobilmi nevyriešia. Budovanie dôvery a profesionality áno</title>
-        <link>https://dennikn.sk/5300182/kamery-problem-s-mobilmi-nevyriesia-budovanie-dovery-a-profesionality-ano/</link>
-    </item>
-    
-    <item>
-        <title>Pojem energetická bezpečnosť treba vymedziť nanovo</title>
-        <link>https://dennikn.sk/5303102/pojem-energeticka-bezpecnost-treba-vymedzit-nanovo/</link>
-    </item>
-    
-    <item>
-        <title>Poslanec František Majerský: Šaško sa zľakol záchranárov, tender do volieb nevyrieši</title>
-        <link>https://dennikn.sk/5303489/poslanec-frantisek-majersky-sasko-sa-zlakol-zachranarov-tender-do-volieb-nevyriesi/</link>
-    </item>
-    
-    <item>
-        <title>Útok ruského dronu v Sumskej oblasti má tragické následky: Zahynula 60-ročná žena</title>
-        <link>https://www.aktuality.sk/clanok/03enYFl/rusky-nalet-v-pohranicnej-sumskej-oblasti-na-severovychode-ukrajiny-si-vyziadal-zivot-60-rocnej-zeny/</link>
-    </item>
-    
-    <item>
-        <title>Atentát na premiéra: Potvrdí Najvyšší súd pre Juraja Cintulu 21 rokov za mrežami?</title>
-        <link>https://www.aktuality.sk/clanok/lJtQltX/bola-strelba-na-roberta-fica-terorizmus-alebo-pokus-o-vrazdu-strelec-z-handlovej-stoji-pred-sudom/</link>
-    </item>
-    
-    <item>
-        <title>Slováci naliali do rizikových dlhopisov 2,5 miliardy eur. Mnohí netušia, že môžu prísť o všetko</title>
-        <link>https://www.aktuality.sk/clanok/1nrhD6m/slovaci-naliali-do-rizikovych-dlhopisov-25-miliardy-eur-mnohi-netusia-ze-mozu-prist-o-vsetko/</link>
-    </item>
-    
-    <item>
-        <title>Prvá liga nepatrí do Nitry. Smer stále nemá nikoho, kto by mohol nahradiť Roberta Fica (komentár Martina Behula)</title>
-        <link>https://www.aktuality.sk/clanok/tjFCWPT/robert-fico-zavrhol-najlepsiu-z-najhorsich-moznosti-komentar-martina-behula/</link>
-    </item>
-    
-    <item>
-        <title>Nehoda viacerých áut ochromila vstup do Bratislavy: Jedno vozidlo skončilo na boku</title>
-        <link>https://www.aktuality.sk/clanok/g52QqsO/nehoda-viacerych-aut-ochromila-vstup-do-bratislavy-jedno-vozidlo-skoncilo-na-boku/</link>
-    </item>
-    
-    <item>
-        <title>Trumpov svet (464. deň): Kongres tlieskal Karolovi III. postojačky. Vance sa však v jednom momente nepridal</title>
-        <link>https://dennikn.sk/5303678/trumpov-svet-464-den-kongres-tlieskal-karolovi-iii-po-stojacky-vance-sa-vsak-v-jednom-momente-nepridal/</link>
-    </item>
-    
-    <item>
-        <title>Rusko na tohtoročnej prehliadke 9. mája prvýkrát od začiatku vojny na Ukrajine nenasadí vojenskú techniku</title>
-        <link>https://www.aktuality.sk/clanok/YJ2KNyv/cervene-namestie-bez-tankov-rusko-na-tohtorocnej-prehliadke-9-maja-nenasadi-vojensku-techniku/</link>
-    </item>
-    
-    <item>
-        <title>Národná protidrogová jednotka udrela: Akcia „MEDELIN“ rozložila organizovanú sieť dílerov</title>
-        <link>https://www.aktuality.sk/clanok/8zTcnir/narodna-protidrogova-jednotka-udrela-akcia-medelin-rozlozila-organizovanu-siet-dilerov/</link>
-    </item>
-    
-    <item>
-        <title>Ráno s NHL: Ak chcete zažiť príbeh desaťročia, fandite Coloradu</title>
-        <link>https://dennikn.sk/5303478/rano-s-nhl-ak-chcete-zazit-pribeh-desatrocia-fandite-coloradu/</link>
-    </item>
-    
-    <item>
-        <title>Babka celé dni komanduje deda a nazýva ho neschopným. Ako mu pomôcť, keď od nej nechce odísť?</title>
-        <link>https://dennikn.sk/5301283/babka-cele-dni-komanduje-deda-a-nazyva-ho-neschopnym-ako-mu-pomoct-ked-od-nej-nechce-odist/</link>
+        <description>&lt;img src=&quot;https://img.aktuality.sk/foto/j-n-kerekr-ti-foto-tasr-jaroslav-nov-k/MTU4eDEwNi9zbWFydC9maWx0ZXJzOmZvcm1hdChqcGcpL2h0dHA6Ly9sb2NhbGhvc3Q6ODEvcHVsc2Ntcy10cmFuc2Zvcm1zLzE=/XCZktkpTURBXy80NzMyMTkxMWE0ZWE5MWU5ZjU4NGEzNDlkODg1ZGM3Yy5qcGeSlQMAbc0T0s0LKJUCzQfQAMLD?st=bbOs_D2cZJvGyPLRXeCoHt3T6XC_uNF-1AMUAzgZxQA&amp;amp;ts=1777413600&amp;amp;e=0&quot; /&gt;
+                                                &lt;br /&gt;
+                                                    O jeho úmrtí informovalo Hnutie Slovensko.</description>
     </item>
     
 </channel>
