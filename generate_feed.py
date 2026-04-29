@@ -14,8 +14,8 @@ ALLOWED_SOURCES = ["SME", "DennikN", "Aktuality"]
 
 # 🔎 KĽÚČOVÉ SLOVÁ (filter kategórií)
 KEYWORDS = [
-    "politika", "ekonomika", "ai", "technológie",
-    "slovensko", "eu", "ukrajina"
+    "ekonomika", "ai", "technológie",
+    "slovensko", "dane", "kosolidácia"
 ]
 
 # ❌ BLOKOVANÉ SLOVÁ
