@@ -2,7 +2,7 @@ name: Generate RSS Feed
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # každých 30 minút
+    - cron: "0 * * * *"  # každú hodinu
   workflow_dispatch:
 
 permissions:
