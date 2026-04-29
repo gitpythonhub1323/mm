@@ -5,6 +5,9 @@ on:
     - cron: "*/30 * * * *"  # každých 30 minút
   workflow_dispatch:
 
+on:
+  push:
+
 permissions:
   contents: write  
 
