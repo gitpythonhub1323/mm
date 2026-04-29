@@ -7,16 +7,15 @@ FEEDS = {
     "SME": "https://rss.sme.sk/rss/rss.asp?sek=sme",
     "DennikN": "https://dennikn.sk/feed/",
     "Aktuality": "https://www.aktuality.sk/rss/"
-    "Pravda": "https://spravy.pravda.sk/rss/xml/"
-    }
+}
 
 # ✅ POVOLENÉ ZDROJE (môžeš upraviť)
-ALLOWED_SOURCES = ["SME", "DennikN", "Aktuality", "Pravda"]
+ALLOWED_SOURCES = ["SME", "DennikN", "Aktuality"]
 
 # 🔎 KĽÚČOVÉ SLOVÁ (filter kategórií)
 KEYWORDS = [
-    "ekonomika", "ai", "technológie",
-    "slovensko", "dane", "kosolidácia"
+    "politika", "ekonomika", "ai", "technológie",
+    "slovensko", "eu", "ukrajina"
 ]
 
 # ❌ BLOKOVANÉ SLOVÁ
