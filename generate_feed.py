@@ -6,11 +6,13 @@ import html
 FEEDS = {
     "SME": "https://rss.sme.sk/rss/rss.asp?sek=sme",
     "DennikN": "https://dennikn.sk/feed/",
-    "Aktuality": "https://www.aktuality.sk/rss/"
+    "Aktuality": "https://www.aktuality.sk/rss/",
+    "TASR": "www.teraz.sk/rss/vsetky-spravy.rss",
+    "Pravda": "https://spravy.pravda.sk/rss/xml/"
 }
 
 # ✅ POVOLENÉ ZDROJE (môžeš upraviť)
-ALLOWED_SOURCES = ["SME", "DennikN", "Aktuality"]
+ALLOWED_SOURCES = ["SME", "DennikN", "Aktuality", "TASR", "Pravda"]
 
 # 🔎 KĽÚČOVÉ SLOVÁ (filter kategórií)
 KEYWORDS = [
