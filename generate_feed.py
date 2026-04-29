@@ -1,38 +1,83 @@
 import feedparser
 from datetime import datetime
+import html
 
-feeds = [
-    "https://rss.sme.sk/rss/rss.asp?sek=sme",
-    "https://dennikn.sk/feed/",
-    "https://www.aktuality.sk/rss/"
+# 🔎 ZDROJE
+FEEDS = {
+    "SME": "https://rss.sme.sk/rss/rss.asp?sek=sme",
+    "DennikN": "https://dennikn.sk/feed/",
+    "Aktuality": "https://www.aktuality.sk/rss/"
+}
+
+# ✅ POVOLENÉ ZDROJE (môžeš upraviť)
+ALLOWED_SOURCES = ["SME", "DennikN", "Aktuality"]
+
+# 🔎 KĽÚČOVÉ SLOVÁ (filter kategórií)
+KEYWORDS = [
+    "politika", "ekonomika", "ai", "technológie",
+    "slovensko", "eu", "ukrajina"
+]
+
+# ❌ BLOKOVANÉ SLOVÁ
+EXCLUDE = [
+    "šport", "bulvár", "celebrity"
 ]
 
 entries = []
 
-for url in feeds:
+for source, url in FEEDS.items():
+    if source not in ALLOWED_SOURCES:
+        continue
+
     feed = feedparser.parse(url)
-    entries.extend(feed.entries)
 
-def get_date(e):
-    return e.get("published_parsed") or datetime.now().timetuple()
+    for e in feed.entries:
+        title = e.get("title", "")
+        summary = e.get("summary", "")
 
-entries.sort(key=get_date, reverse=True)
+        text = (title + " " + summary).lower()
 
+        # filter include
+        if not any(k in text for k in KEYWORDS):
+            continue
+
+        # filter exclude
+        if any(x in text for x in EXCLUDE):
+            continue
+
+        entries.append({
+            "title": title,
+            "link": e.get("link", "#"),
+            "summary": summary,
+            "source": source,
+            "date": e.get("published_parsed") or datetime.now().timetuple()
+        })
+
+# zoradenie
+entries.sort(key=lambda x: x["date"], reverse=True)
+
+# RSS položky
 rss_items = ""
-for e in entries[:30]:
+for e in entries[:40]:
+    title = html.escape(e["title"])
+    link = e["link"]
+    desc = html.escape(e["summary"])
+    source = e["source"]
+
     rss_items += f"""
     <item>
-        <title>{e.title}</title>
-        <link>{e.link}</link>
+        <title>[{source}] {title}</title>
+        <link>{link}</link>
+        <description>{desc}</description>
     </item>
     """
 
 rss = f"""<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title>Moje správy</title>
-<description>SME + Denník N + Aktuality</description>
-<link>https://github.com/</link>
+<title>Filtrované správy</title>
+<description>Len relevantné správy (AI, politika, ekonomika)</description>
+<link>https://github.com</link>
 {rss_items}
 </channel>
 </rss>
