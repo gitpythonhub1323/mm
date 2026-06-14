@@ -16,8 +16,7 @@ ALLOWED_SOURCES = ["SME", "DennikN", "Aktuality", "TASR", "Pravda"]
 
 # 🔎 KĽÚČOVÉ SLOVÁ (filter kategórií)
 KEYWORDS = [
-    "ekonomika", "ai", "technológie",
-    "slovensko", "konsolidácia", "dane", "sociálne veci", "ekonomický", "ekonomická", ekonomické", "financie", "financií", "komodita", "komodity", "ekonomiky", "prognóza", "prognózy", "prognózu", "prognózou", "dôchodok", "dôchodky", "dôchodkom", "dôchodková", "potraviny", "expert", "experti", úroveň", "úrovne", "úrovni", "plat", "platy", "peniaze", "ekonomickej", "ekonomickým", "rast", "rastu", príjem", "príjmu", "platba", "platby"
+    "ekonomika", "ai", "technológie", "slovensko", "konsolidácia", "dane", "sociálne veci", "ekonomický", "ekonomická", ekonomické", "financie", "financií", "komodita", "komodity", "ekonomiky", "prognóza", "prognózy", "prognózu", "prognózou", "dôchodok", "dôchodky", "dôchodkom", "dôchodková", "potraviny", "expert", "experti", úroveň", "úrovne", "úrovni", "plat", "platy", "peniaze", "ekonomickej", "ekonomickým", "rast", "rastu", príjem", "príjmu", "platba", "platby"
 ]
 
 # ❌ BLOKOVANÉ SLOVÁ
