@@ -7,7 +7,7 @@ FEEDS = {
     "SME": "https://rss.sme.sk/rss/rss.asp?sek=sme",
     "DennikN": "https://dennikn.sk/feed/",
     "Aktuality": "https://www.aktuality.sk/rss/",
-    "TASR": "www.teraz.sk/rss/vsetky-spravy.rss",
+    "TASR": "https://www.teraz.sk/rss/vsetky-spravy.rss",
     "Pravda": "https://spravy.pravda.sk/rss/xml/"
 }
 
