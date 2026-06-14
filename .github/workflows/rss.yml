@@ -27,19 +27,18 @@ jobs:
       - name: Run script
         run: python generate_feed.py
 
-   - name: Commit feed
+ - name: Commit feed
   run: |
     git config user.name "github-actions"
     git config user.email "github-actions@github.com"
 
-    git add feed.xml
+    git fetch origin main
+    git reset --hard origin/main
 
-    # ak nič nezmenené, skonči
+    git add feed.xml
     git diff --cached --quiet && exit 0
 
-    # vždy sa zosynchronizuj
-    git pull --rebase origin main || true
-
+    git commit -m "Update feed"
     git push origin main
 
 concurrency:
