@@ -43,3 +43,6 @@ jobs:
   concurrency:
   group: feed-main
   cancel-in-progress: true
+
+git checkout -b bot/update-feed
+git push origin bot/update-feed
