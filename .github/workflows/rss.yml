@@ -61,3 +61,13 @@ jobs:
 concurrency:
   group: rss-feed
   cancel-in-progress: true
+
+git fetch origin main
+git reset --hard origin/main
+
+git add feed.xml
+
+git diff --cached --quiet && exit 0
+
+git commit -m "Update feed"
+git push origin main
