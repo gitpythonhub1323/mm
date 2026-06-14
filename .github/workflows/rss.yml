@@ -31,3 +31,5 @@ jobs:
           git add feed.xml
           git commit -m "Update feed" || echo "No changes"
           git push
+          git pull --rebase origin main || true
+git push origin main
