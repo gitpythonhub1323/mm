@@ -2,11 +2,8 @@ name: Generate RSS Feed
 
 on:
   schedule:
-    - cron: "0 * * * *"  # každú hodinu
+    - cron: "*/30 * * * *"  # každých 30 minút
   workflow_dispatch:
-
-permissions:
-  contents: write  
 
 jobs:
   build:
@@ -14,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: "3.x"
 
@@ -27,47 +24,10 @@ jobs:
       - name: Run script
         run: python generate_feed.py
 
-- name: Commit feed safely
-  run: |
-    git config user.name "github-actions"
-    git config user.email "github-actions@github.com"
-
-    git fetch origin main
-    git checkout main
-    git reset --hard origin/main
-
-    git add feed.xml
-
-    git diff --cached --quiet && exit 0
-
-    git commit -m "Update feed"
-
-    git push origin main
-
- - name: Commit feed
-  run: |
-    git config user.name "github-actions"
-    git config user.email "github-actions@github.com"
-
-    git fetch origin main
-    git reset --hard origin/main
-
-    git add feed.xml
-    git diff --cached --quiet && exit 0
-
-    git commit -m "Update feed"
-    git push origin main
-
-concurrency:
-  group: rss-feed
-  cancel-in-progress: true
-
-git fetch origin main
-git reset --hard origin/main
-
-git add feed.xml
-
-git diff --cached --quiet && exit 0
-
-git commit -m "Update feed"
-git push origin main
+      - name: Commit feed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add feed.xml
+          git commit -m "Update feed" || echo "No changes"
+          git push
