@@ -18,7 +18,7 @@ ALLOWED_SOURCES = ["SME", "DennikN", "Aktuality", "TASR", "Pravda"]
 KEYWORDS = [
     "ekonomika", "ai", "technológie",
     "slovensko", "konsolidácia", "dane", "sociálne veci", 
-    "ekonomický", "ekonomická", ekonomické", "ekonomickí",
+    "ekonomický", "ekonomická", ekonomické", 
     "financie", "financií", "komodita", "komodity", "ekonomiky",
     "prognóza", "prognózy", "prognózu", "prognózou",
     "dôchodok", "dôchodky", "dôchodkom", "dôchodková",
