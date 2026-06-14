@@ -39,3 +39,7 @@ jobs:
         git commit -m "Update feed"
 
         git push origin main
+
+  concurrency:
+  group: feed-main
+  cancel-in-progress: true
