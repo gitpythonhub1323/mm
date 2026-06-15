@@ -2,7 +2,7 @@ name: Generate RSS Feed
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # každých 30 minút
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - name: Checkout repo
-  uses: actions/checkout@v4
-  with:
-    fetch-depth: 0
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -29,14 +29,14 @@ jobs:
       - name: Run script
         run: python generate_feed.py
 
-     - name: Commit feed
-  run: |
-    git config --local user.email "action@github.com"
-    git config --local user.name "GitHub Action"
+      - name: Commit feed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
 
-    git pull origin main
+          git pull --rebase origin main
 
-    git add feed.xml
-    git commit -m "Update feed" || echo "No changes"
+          git add feed.xml
+          git commit -m "Update feed" || exit 0
 
-    git push origin main
+          git push origin main
