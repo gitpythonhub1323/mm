@@ -24,7 +24,17 @@ for source, url in FEEDS.items():
     if source not in ALLOWED_SOURCES:
         continue
 
+    try:
     feed = feedparser.parse(url)
+except Exception as e:
+    print("FEED ERROR:", url, e)
+    continue
+
+if not hasattr(feed, "entries"):
+    continue
+
+    if not feed.entries:
+    continue
 
     for e in feed.entries:
         title = (e.get("title") or "")
