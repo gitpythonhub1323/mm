@@ -24,7 +24,7 @@ for source, url in FEEDS.items():
     if source not in ALLOWED_SOURCES:
         continue
 
-    try:
+try:
     feed = feedparser.parse(url)
 except Exception as e:
     print("FEED ERROR:", url, e)
