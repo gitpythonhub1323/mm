@@ -7,6 +7,12 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: rss-feed
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -22,12 +28,28 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install --upgrade pip
+          pip install feedparser
 
-      - name: Generate RSS
+      - name: Run script
         run: python generate_feed.py
 
-      - name: Upload RSS artifact
+      - name: Prepare Pages folder
+        run: |
+          mkdir -p public
+          cp feed.xml public/feed.xml
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: feed.xml
+          path: public
+
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
