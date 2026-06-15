@@ -86,3 +86,10 @@ rss = f"""<?xml version="1.0" encoding="UTF-8" ?>
 
 with open("feed.xml", "w", encoding="utf-8") as f:
     f.write(rss)
+import os
+
+print("CURRENT DIR:", os.getcwd())
+print("FILES:", os.listdir())
+
+with open("feed.xml", "w", encoding="utf-8") as f:
+    f.write("<test>ok</test>")
