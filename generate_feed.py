@@ -21,22 +21,22 @@ EXCLUDE = ["šport", "bulvár", "celebrity"]
 entries = []
 
 for source, url in FEEDS.items():
+
     if source not in ALLOWED_SOURCES:
         continue
 
-try:
-    feed = feedparser.parse(url)
-except Exception as e:
-    print("FEED ERROR:", url, e)
-    continue
+    try:
+        feed = feedparser.parse(url)
 
-if not hasattr(feed, "entries"):
-    continue
+        if not feed or not hasattr(feed, "entries"):
+            continue
 
-    if not feed.entries:
-    continue
+    except Exception as e:
+        print("FEED ERROR:", source, url, e)
+        continue
 
     for e in feed.entries:
+
         title = (e.get("title") or "")
         summary = (e.get("summary") or "")
 
@@ -73,7 +73,7 @@ rss = f"""<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
 <title>Filtrované správy</title>
-<description>Len relevantné správy</description>
+<description>AI + ekonomika + Slovensko správy</description>
 <link>https://github.com</link>
 {rss_items}
 </channel>
@@ -82,3 +82,5 @@ rss = f"""<?xml version="1.0" encoding="UTF-8" ?>
 
 with open("feed.xml", "w", encoding="utf-8") as f:
     f.write(rss)
+
+print("RSS generated:", len(entries), "items")
