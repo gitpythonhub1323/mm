@@ -27,10 +27,14 @@ jobs:
       - name: Run script
         run: python generate_feed.py
 
-      - name: Commit feed
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add feed.xml
-          git commit -m "Update feed" || echo "No changes"
-          git push
+     - name: Commit feed
+  run: |
+    git config --local user.email "action@github.com"
+    git config --local user.name "GitHub Action"
+
+    git pull origin main
+
+    git add feed.xml
+    git commit -m "Update feed" || echo "No changes"
+
+    git push origin main
